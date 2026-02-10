@@ -18,6 +18,6 @@ Actuellement, cet outil mettra à jour vers Windows LTSC 2024 pour profiter des 
 Télécharger le fichier ```Windows 11 LTSC 2024 Installer.cmd``` depuis les Releases ou le code source.
 
 Exécuter le fichier pour lancer l'installation.  
-Note : Le fichier demandera les permissions administrateurs pour pouvoir s'excécuter, et Windows SmartScreen peut bloquer l'installation.
+Note : Le fichier demandera les permissions administrateurs pour pouvoir s'excécuter, et Windows SmartScreen peut bloquer le lancement du ficher.
 
 À partir de là, l'installation sera automatisée.

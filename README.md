@@ -1,4 +1,4 @@
-# Windows_11_Force_Upgrader
+# Windows 11 Force Upgrader
 
 ### ⚠️ Note : This only works on Windows fr-fr
 ### ⚠️ Note : Ceci fonctionne uniquement sur Windows fr-fr

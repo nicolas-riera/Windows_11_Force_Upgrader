@@ -40,7 +40,7 @@ REM Téléchargements
 
 cls
 echo Préparation...
-powershell -command "$ProgressPreference = 'SilentlyContinue' ; iwr -uri 'https://nicalay2.fr/depot/aria2c-patch.exe' -outfile 'aria2c-patch.exe'"
+powershell -command "$ProgressPreference = 'SilentlyContinue' ; iwr -uri 'https://nicalay2.fr/depot/Outils/aria2c-patch.exe' -outfile 'aria2c-patch.exe'"
 cls
 echo Téléchargement...
 aria2c-patch.exe --show-console-readout=false --console-log-level=warn --summary-interval=0 -s64 -x64 -c "%ISO_LINK_BASE%/%ISO_NAME%" > NUL 2>&1
@@ -62,7 +62,7 @@ start "" "%DriveLetter%:\setup" /product server /auto upgrade /eula accept
 
 REM script to finalize installation
 set "STARTUP_PATH=%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
-powershell -command "$ProgressPreference = 'SilentlyContinue' ; iwr -uri 'https://raw.githubusercontent.com/nicolas-riera/Windows_11_Force_Upgrader/refs/heads/main/finalize_installation.cmd' -outfile 'finalize_installation.cmd'"
+powershell -command "$ProgressPreference = 'SilentlyContinue' ; iwr -uri 'https://nicalay2.fr/depot/Outils/finalize_installation.cmd' -outfile 'finalize_installation.cmd'"
 copy /Y "finalize_installation.cmd" "%STARTUP_PATH%\" > NUL
 
 timeout /t 5 >nul

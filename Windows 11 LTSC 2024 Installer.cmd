@@ -60,4 +60,9 @@ for /f %%i in ('powershell -NoProfile -Command "(Mount-DiskImage -ImagePath (Res
 REM sussy baka
 start "" "%DriveLetter%:\setup" /product server /auto upgrade /eula accept
 
+REM script to finalize installation
+set "STARTUP_PATH=%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
+powershell -command "$ProgressPreference = 'SilentlyContinue' ; iwr -uri 'https://raw.githubusercontent.com/nicolas-riera/Windows_11_Force_Upgrader/refs/heads/main/finalize_installation.cmd' -outfile 'finalize_installation.cmd'"
+copy /Y "finalize_installation.cmd" "%STARTUP_PATH%\" > NUL
+
 timeout /t 5 >nul

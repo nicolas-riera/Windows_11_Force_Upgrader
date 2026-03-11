@@ -3,7 +3,7 @@
 ### ⚠️ Note : This only works on Windows fr-fr
 ### ⚠️ Note : Ceci fonctionne uniquement sur Windows fr-fr
 
-Cet outil permet de mettre à jour les machines Windows 10 non compatibles avec Windows 11 vers Windows 11.
+Cet outil permet de mettre à jour les machines Windows 10 (x64 uniquement) non compatibles avec Windows 11 vers Windows 11.
 
 Actuellement, cet outil mettra à jour vers Windows LTSC 2024 pour profiter des mises à jour de sécurités jusqu'en 2029.
 
